@@ -1,10 +1,15 @@
 ## User Tutorial: Billing Application
 Welcome to this application for some reason of me testing something really dumb! This guide will help you navigate through how to use this application
 
-# Step 1: Launch the application
+# Step 1: Install Python and required packages
+  - Download Python by visting this [Python website](https://www.python.org/downloads/) and download the latest version of Python
+  - Open a terminal or command prompt and run the following command to install the required libraries
+    ```bash
+    pip install openpyxl tkinter
+# Step 2: Launch the application
   - Download all the files in this bill generator. Open the executable file that it is in the Application file
   - The application will appear, ready for use
-# Step 2: Add Customer and Order Information
+# Step 3: Add Customer and Order Information
   - Enter Customer Details:
     * In the Customer Name field, type the customer’s full name.
     * In the Date field, enter the date of the bill in DD/MM format.
