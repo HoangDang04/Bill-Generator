@@ -32,7 +32,7 @@ def calculate_total(order_details):
     return total, details
 
 # Save the bill to Excel
-def save_to_excel(details, total, ship_fee, customer_name, date, comment, sheet_name="Test_bill"):
+def save_to_excel(details, total, ship_fee, customer_name, date, comment, sheet_name="Bill"):
     if not os.path.exists("bill_data.xlsx"):
         messagebox.showerror("Error", "Excel file not found.")
         return
@@ -161,6 +161,7 @@ def generate_bill():
             entry_product.delete(0, tk.END)
             entry_product.insert(0, selected_meal)
             listbox_suggestions.delete(0, tk.END)
+            listbox_suggestions.grid_remove()
 
     # Calculating the total of the bill
     def on_calculate():
